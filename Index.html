@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>RhythmShare</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="container">
+            <nav>
+                <ul>
+                    <li id="logo"><h1>RhythmShare</h1></li>
+                    <div class="input-container">
+                        <input
+                            type="search"
+                            name=""
+                            id="search-input"
+                            placeholder="search"
+                        />
+                        <img
+                            src="/assets/search.svg"
+                            alt="search-btn"
+                            id="search-btn"
+                        />
+                    </div>
+                    <div>
+                        <button class="btn">Login</button>
+                        <button class="btn">SignUp</button>
+                    </div>
+                </ul>
+            </nav>
+            <!-- -->
+
+            <div id="playlists">
+                <div class="card">
+                    <input
+                        type="text"
+                        name=""
+                        id="user-name"
+                        class="card-inputs name"
+                        placeholder="Enter your name"
+                    />
+
+                    <input
+                        type="text"
+                        name="profile-link"
+                        id="profile-link"
+                        class="card-inputs profile-input"
+                        placeholder="User Id Link"
+                    />
+                    <img
+                        src="/assets/sample.png"
+                        alt=""
+                        srcset=""
+                        id="playlist-image"
+                    />
+                    <input
+                        type="text"
+                        name="playlist-link"
+                        id="playlist-link"
+                        class="card-inputs"
+                        placeholder="Enter Playlist link"
+                    />
+                    <button class="btn" id="add-btn">Add Playlist</button>
+                </div>
+
+                <div class="playlist-added card">
+                    <div class="card-header">
+                        <p class="user-name">Shubham</p>
+                        <button class="btn user-follow">
+                            <a
+                                target="_blank"
+                                href="https://open.spotify.com/user/312wa5ifn7kyh7634oczwy77gedm?si=c5e0e0b0904a48f6"
+                                >Follow Now</a
+                            >
+                            <button class="close-btn btn">X</button>
+                        </button>
+                    </div>
+                    <iframe
+                        style="border-radius: 12px"
+                        src="https://open.spotify.com/embed/playlist/6jG6wTt0RsqrxLahN2ZgBD?utm_source=generator"
+                        width="100%"
+                        height="380"
+                        frameborder="0"
+                        allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"
+                    ></iframe>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="/index.js"></script>
+    </body>
+</html>
