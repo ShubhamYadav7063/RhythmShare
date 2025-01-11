@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="form.css" />
+        <link rel="stylesheet" href="/style.css" />
+        <title>Login</title>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li id="logo">
+                    <h1 onclick="window.location.href='/index.html'">
+                        RhythmShare
+                    </h1>
+                </li>
+                <div class="input-container">
+                    <input
+                        type="search"
+                        name=""
+                        id="search-input"
+                        placeholder="search"
+                    />
+                    <img
+                        src="/assets/search.svg"
+                        alt="search-btn"
+                        id="search-btn"
+                    />
+                </div>
+                <div class="account-details">
+                    <button
+                        class="btn"
+                        onclick="window.location.href='login.html'"
+                    >
+                        Login
+                    </button>
+
+                    <button
+                        class="btn"
+                        onclick="window.location.href='signup.html'"
+                    >
+                        SignUp
+                    </button>
+                </div>
+            </ul>
+        </nav>
+        <div class="container">
+            <form id="loginForm">
+                <input
+                    type="text"
+                    name="username"
+                    id="username"
+                    placeholder="Username"
+                    required
+                    class="form-input"
+                />
+                <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Password"
+                    required
+                    class="form-input"
+                />
+                <div class="btn-container">
+                    <button
+                        type="submit"
+                        class="btn submit"
+                        style="margin-top: 0"
+                    >
+                        Login
+                    </button>
+                    <span
+                        style="
+                            text-align: center;
+                            margin-left: 1rem;
+                            margin-right: 1rem;
+                            font-size: 1.5rem;
+                        "
+                        >|</span
+                    >
+                    <button
+                        class="btn submit"
+                        style="margin-top: 0"
+                        onclick="window.location.href='signup.html'"
+                    >
+                        SignUp
+                    </button>
+                </div>
+            </form>
+        </div>
+        <footer>
+            <p style="color: whitesmoke">
+                Made with ❤️ by
+                <a
+                    href="https://www.linkedin.com/in/shubham-yadav-3667a51ba/"
+                    style="text-decoration: none; color: #1db954"
+                    >Shubham Yadav</a
+                >
+            </p>
+        </footer>
+
+        <script src="account.js"></script>
+    </body>
+</html>

@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    user-select: none;
+}
+
+html {
+    background-color: #191414;
+}
+
+nav {
+    background-color: whitesmoke;
+    /* display: flex; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 12px;
+}
+
+nav li {
+    list-style: none;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+#logo {
+    user-select: none;
+    cursor: pointer;
+}
+
+#search-input {
+    border-radius: 5px;
+    border: 2px solid #191414;
+    padding: 0.5rem;
+}
+
+#search-btn {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+#container {
+    height: 89vh;
+}
+
+
+#playlists {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-content: baseline;
+    height: 28.7rem;
+    width: 20.01%;
+    border-radius: 10px;
+    background-color: white;
+    padding: 15px;
+
+    margin: 20px;
+}
+
+
+#playlist-image {
+    height: 10rem;
+    width: 15rem;
+    /* overflow: hidden; */
+    border-radius: 5px;
+    /* margin-left: 15px; */
+}
+
+.card-inputs {
+    margin: 15px;
+    text-align: center;
+    padding: 10px;
+    width: 15rem;
+    border-radius: 10px;
+    border: 2px solid rgb(207, 207, 207);
+}
+
+#logout-btn {
+    margin-left: 0.5rem;
+}
+
+.account-details span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-input {
+    margin-top: 0.1rem;
+}
+
+.user-icon {
+    background: transparent;
+    height: 2rem;
+    width: 3rem;
+
+}
+
+.user-name {
+    font-family: "poppins";
+    font-size: 1.6rem;
+    font-weight: bolder;
+}
+
+.btn {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    background-color: #1DB954;
+}
+
+.btn:hover {
+    /* background-color: ; */
+    /* pointer-events: o; */
+    cursor: pointer;
+    box-shadow: 2px -0.5px 1px #191414;
+}
+
+
+.close-btn {
+    position: relative;
+    background: grey;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    border: none;
+    top: -2rem;
+    right: -2rem;
+}
+
+.close-btn:hover {
+    cursor: pointer !important;
+}
+
+
+.playlist-added {
+    width: 20.01%;
+    height: 100%;
+    box-shadow: 2px 2px 10px silver;
+    border-radius: 5px;
+}
+
+/* iframe { */
+/* margin: 10px; */
+/* display: flex;
+    justify-content: center;
+    align-items: center; */
+/* } */
+
+.user-follow {
+    position: relative;
+    right: -20px;
+}
+
+.user-follow a {
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+}
+
+.playlist-add-btn {
+    width: 15rem;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
